@@ -1,0 +1,23 @@
+{
+    "name": "jansuchanek/nadmin-layout",
+    "description": "Configurable admin layout shell for Nette — sidebar, topbar, locale switcher, datagrid JS",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.2",
+        "nette/di": "^3.2",
+        "latte/latte": "^3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "NAdminLayout\\": "src/"
+        }
+    },
+    "extra": {
+        "nette": {
+            "extensions": {
+                "nadminLayout": "NAdminLayout\\DI\\NAdminLayoutExtension"
+            }
+        }
+    }
+}
